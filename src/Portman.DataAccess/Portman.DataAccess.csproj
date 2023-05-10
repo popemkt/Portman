@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="GeoAPI.Core" Version="1.7.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0-preview.3.23174.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0-preview.3.23174.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0-preview.3.23174.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite" Version="8.0.0-preview.3.23174.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Portman.Domain\Portman.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

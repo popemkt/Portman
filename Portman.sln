@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portman.Api", "src\Portman.Api\Portman.Api.csproj", "{F8EDE453-5EAE-43BD-B2D0-7E3B04E808C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portman.Domain", "src\Portman.Domain\Portman.Domain.csproj", "{D8C1AFAC-7D03-4693-9EC1-C758ED756DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portman.DataAccess", "src\Portman.DataAccess\Portman.DataAccess.csproj", "{D355A2BE-66A1-4984-8BB9-1879DD3D34F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EBDC7D5B-E63E-445F-9273-9E8FC108E6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portman.IntegrationTests", "tests\Portman.IntegrationTests\Portman.IntegrationTests.csproj", "{AC71020F-120E-4355-A32D-B52EB38A9C4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8EDE453-5EAE-43BD-B2D0-7E3B04E808C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8EDE453-5EAE-43BD-B2D0-7E3B04E808C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8EDE453-5EAE-43BD-B2D0-7E3B04E808C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8EDE453-5EAE-43BD-B2D0-7E3B04E808C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C1AFAC-7D03-4693-9EC1-C758ED756DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C1AFAC-7D03-4693-9EC1-C758ED756DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C1AFAC-7D03-4693-9EC1-C758ED756DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C1AFAC-7D03-4693-9EC1-C758ED756DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D355A2BE-66A1-4984-8BB9-1879DD3D34F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D355A2BE-66A1-4984-8BB9-1879DD3D34F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D355A2BE-66A1-4984-8BB9-1879DD3D34F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D355A2BE-66A1-4984-8BB9-1879DD3D34F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC71020F-120E-4355-A32D-B52EB38A9C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC71020F-120E-4355-A32D-B52EB38A9C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC71020F-120E-4355-A32D-B52EB38A9C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC71020F-120E-4355-A32D-B52EB38A9C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC71020F-120E-4355-A32D-B52EB38A9C4C} = {EBDC7D5B-E63E-445F-9273-9E8FC108E6A7}
+	EndGlobalSection
+EndGlobal
