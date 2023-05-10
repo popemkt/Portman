@@ -12,10 +12,6 @@ public static class DependencyInjections
         serviceCollection.AddDbContext<PortFinderContext>(options =>
         {
             options.UseInMemoryDatabase("TestDatabase");
-            // {
-            //     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"), 
-            //         x => x.UseNetTopologySuite());
-            // }
         });
         serviceCollection.AddScoped<IUnitOfWork, UnitOfWork>();
         return serviceCollection;

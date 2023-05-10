@@ -6,4 +6,16 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Portman.Api\Portman.Api.csproj" />
+      <ProjectReference Include="..\..\src\Portman.Domain\Portman.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.5" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+      <PackageReference Include="Moq" Version="4.18.4" />
+      <PackageReference Include="xunit" Version="2.5.0-pre.11" />
+    </ItemGroup>
+
 </Project>

@@ -22,7 +22,7 @@ public class PortFinderContext : DbContext
         {
             modelBuilder.Entity<Ship>().HasData(new Ship
             {
-                Id = (i + 1).ToString(),
+                Id = Guid.NewGuid(),
                 Name = $"Ship{i + 1}",
                 Location = geometryFactory.CreatePoint(new Coordinate(i + 10, i + 20)),
                 Velocity = 20
@@ -34,7 +34,7 @@ public class PortFinderContext : DbContext
         {
             modelBuilder.Entity<Port>().HasData(new Port
             {
-                Id = (i + 1).ToString(),
+                Id = Guid.NewGuid(),
                 Name = $"Port{i + 1}",
                 Location = geometryFactory.CreatePoint(new Coordinate(i + 50, i + 60))
             });

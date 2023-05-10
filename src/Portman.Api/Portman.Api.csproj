@@ -8,6 +8,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <InternalsVisibleTo Include="Portman.IntegrationTests" />
+    </ItemGroup>
+    
+    <ItemGroup>
         <PackageReference Include="GeoAPI.Core" Version="1.7.5" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
         <PackageReference Include="NetTopologySuite" Version="2.5.0" />

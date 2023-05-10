@@ -44,14 +44,9 @@ public class ShipsController : ControllerBase
         return CreatedAtAction(nameof(GetShip), new { id = ship.Id }, ship);
     }
 
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateShip(string id, Ship ship)
+    [HttpPut("{id:guid}")]
+    public async Task<IActionResult> UpdateShip(Guid id, Ship ship)
     {
-        if (id != ship.Id)
-        {
-            return BadRequest();
-        }
-
         _unitOfWork.ShipRepository.Update(ship);
 
         try
@@ -66,7 +61,7 @@ public class ShipsController : ControllerBase
         return NoContent();
     }
 
-    private bool ShipExists(string id)
+    private bool ShipExists(Guid id)
     {
         return _unitOfWork.ShipRepository.GetAll().Any(e => e.Id == id);
     }
